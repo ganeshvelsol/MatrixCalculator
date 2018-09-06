@@ -120,7 +120,6 @@ public class AdditionExample extends AppCompatActivity
                     {
                         EditText et1=(EditText)v6.findViewById(R.id.one_et1);
                         ets=et1.getText().toString().trim();
-
                     }
                 });
                 al.show();

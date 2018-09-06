@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".addition.AdditionExample" />
-        <activity android:name=".addition.Addition"></activity>
+        <activity android:name=".addition.Addition" />
+        <activity android:name=".subtraction.SubtractionExample" />
+        <activity android:name=".subtraction.Subtraction"></activity>
     </application>
 
 </manifest>

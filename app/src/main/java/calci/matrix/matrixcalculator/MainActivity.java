@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import calci.matrix.matrixcalculator.addition.AdditionExample;
+import calci.matrix.matrixcalculator.subtraction.SubtractionExample;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,11 +33,20 @@ public class MainActivity extends AppCompatActivity {
         lower_triangular_matrix_txt=(TextView)findViewById(R.id.lower_triangular_matrix_txt);
 
 
-        Addition_matrix_txt.setOnClickListener(new View.OnClickListener() {
+        Addition_matrix_txt.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {
                 startActivity(new Intent(MainActivity.this,AdditionExample.class));
+            }
+        });
+
+        subtraction_matrix_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this,SubtractionExample.class));
             }
         });
     }
