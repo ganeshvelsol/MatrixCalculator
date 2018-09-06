@@ -19,7 +19,9 @@
         <activity android:name=".addition.AdditionExample" />
         <activity android:name=".addition.Addition" />
         <activity android:name=".subtraction.SubtractionExample" />
-        <activity android:name=".subtraction.Subtraction"></activity>
+        <activity android:name=".subtraction.Subtraction" />
+        <activity android:name=".DiagonalMatrix" />
+        <activity android:name=".determenent.DeterminentMatrix"></activity>
     </application>
 
 </manifest>

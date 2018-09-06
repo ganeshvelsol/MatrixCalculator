@@ -67,15 +67,15 @@ public class Subtraction extends AppCompatActivity
     }
     public void initParams()
     {
-        s1=(TextView)findViewById(R.id.s1);
-        s2=(TextView)findViewById(R.id.s2);
-        s3=(TextView)findViewById(R.id.s3);
-        s4=(TextView)findViewById(R.id.s4);
-        s5=(TextView)findViewById(R.id.s5);
-        s6=(TextView)findViewById(R.id.s6);
-        s7=(TextView)findViewById(R.id.s7);
-        s8=(TextView)findViewById(R.id.s8);
-        s9=(TextView)findViewById(R.id.s9);
+        s1=(TextView)findViewById(R.id.textView);
+        s2=(TextView)findViewById(R.id.textView2);
+        s3=(TextView)findViewById(R.id.textView3);
+        s4=(TextView)findViewById(R.id.textView4);
+        s5=(TextView)findViewById(R.id.textView5);
+        s6=(TextView)findViewById(R.id.textView6);
+        s7=(TextView)findViewById(R.id.textView7);
+        s8=(TextView)findViewById(R.id.textView8);
+        s9=(TextView)findViewById(R.id.textView9);
 
         if (pos.equals("1"))
         {

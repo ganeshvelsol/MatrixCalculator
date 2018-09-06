@@ -1,0 +1,109 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="74dp"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="34dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toLeftOf="@+id/textView12"
+        android:layout_toStartOf="@+id/textView12"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView12"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignTop="@+id/textView23"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:layout_marginTop="33dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/textView25"
+        android:layout_toRightOf="@+id/textView25"
+        android:text="The diagonal elemmts should have a value  either
+ 1 or other than 1, itmay be positive integers or negative integers that matrix we
+ call as diagonal matrix" />
+</RelativeLayout>

@@ -255,7 +255,7 @@ public class AdditionExample extends AppCompatActivity
             {
                 if (c2=="2")
                 {
-                    //inflate 1*1 layout for second matrix
+                    //inflate 2*2 layout for second matrix
                     final View v6=((Activity)this).getLayoutInflater().inflate(R.layout.five_elements,null);
                     AlertDialog.Builder al=new AlertDialog.Builder(this);
                     al.setCancelable(false);

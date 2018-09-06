@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import calci.matrix.matrixcalculator.addition.AdditionExample;
+import calci.matrix.matrixcalculator.determenent.DeterminentMatrix;
 import calci.matrix.matrixcalculator.subtraction.SubtractionExample;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,6 +48,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(MainActivity.this,SubtractionExample.class));
+            }
+        });
+        diagonal_matrix_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this,DiagonalMatrix.class));
+            }
+        });
+
+        determinent_matrix_txt.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this,DeterminentMatrix.class));
             }
         });
     }
