@@ -21,7 +21,14 @@
         <activity android:name=".subtraction.SubtractionExample" />
         <activity android:name=".subtraction.Subtraction" />
         <activity android:name=".DiagonalMatrix" />
-        <activity android:name=".determenent.DeterminentMatrix"></activity>
+        <activity android:name=".determenent.DeterminentMatrix" />
+        <activity android:name=".inverse.InverseMatrix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

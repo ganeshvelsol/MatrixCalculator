@@ -26,9 +26,9 @@ public class DeterminentMatrix extends AppCompatActivity {
     String crr[]={"--select column--","2","3"};
     Button first_button;
     String r1,c1;
-    EditText et_7,et_8,et_9,et_10;
+    EditText et_7,et_8,et_9,et_10,et_11,et_12,et_13,et_14,et_15,et_16,et_17,et_18,et_19;
     TextView one,two,three,four,five,six,seven,eigt,nine;
-    String a2,a3,a4,a5;
+    String a2,a3,a4,a5,a11,a12,a13,a21,a22,a23,a31,a32,a33;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -126,7 +126,50 @@ public class DeterminentMatrix extends AppCompatActivity {
             if (c1=="3")
             {
                 //inflate 3*3 matrix layout here
+                final View v6=((Activity)this).getLayoutInflater().inflate(R.layout.six_elements,null);
+                AlertDialog.Builder al=new AlertDialog.Builder(this);
+                al.setCancelable(false);
+                al.setView(v6);
+                al.setTitle("enter values");
+                al.setPositiveButton("ok", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
 
+                        et_11=(EditText)v6.findViewById(R.id.six_et1);
+                        a11=et_11.getText().toString().trim();
+
+                        et_12=(EditText)v6.findViewById(R.id.six_et2);
+                        a12=et_12.getText().toString().trim();
+
+                        et_13=(EditText)v6.findViewById(R.id.six_et3);
+                        a13=et_13.getText().toString().trim();
+
+                        et_14=(EditText)v6.findViewById(R.id.six_et4);
+                        a21=et_14.getText().toString().trim();
+
+                        et_15=(EditText)v6.findViewById(R.id.six_et5);
+                        a22=et_15.getText().toString().trim();
+
+                        et_16=(EditText)v6.findViewById(R.id.six_et6);
+                        a23=et_16.getText().toString().trim();
+
+                        et_17=(EditText)v6.findViewById(R.id.six_et7);
+                        a31=et_17.getText().toString().trim();
+
+                        et_18=(EditText)v6.findViewById(R.id.six_et8);
+                        a32=et_18.getText().toString().trim();
+
+                        et_19=(EditText)v6.findViewById(R.id.six_et9);
+                        a33=et_19.getText().toString().trim();
+                        //three_one,three_two,three_three,three_four,three_five,three_six
+                        performThreethree();
+                        //and pass data values to next activities
+
+                    }
+                });
+                al.show();
             }
         }
     }
@@ -135,10 +178,15 @@ public class DeterminentMatrix extends AppCompatActivity {
         int  ad=(Integer.parseInt(a2)*Integer.parseInt(a5));
         int bc= (Integer.parseInt(a3)*Integer.parseInt(a4));
         int s=ad-bc;
-        one.setText(""+(Integer.parseInt(a5)/s));
-        two.setText("-"+(Integer.parseInt(a3)/s));
-        four.setText("-"+(Integer.parseInt(a4)/s));
-        five.setText(""+(Integer.parseInt(a2)/s));
+        one.setText("det matrix of 2*2 is "+s);
 
+    }
+    public void performThreethree()
+    {
+        int one1=Integer.parseInt(a11)*((Integer.parseInt(a22)*Integer.parseInt(a33))-(Integer.parseInt(a32)*Integer.parseInt(a23)));
+        int two=Integer.parseInt(a12)*((Integer.parseInt(a21)*Integer.parseInt(a33))-(Integer.parseInt(a23)*Integer.parseInt(a31)));
+        int thre=Integer.parseInt(a13)*((Integer.parseInt(a21)*Integer.parseInt(a32))-(Integer.parseInt(a31)*Integer.parseInt(a22)));
+        int tot=one1-two+thre;
+        one.setText("det matrix of 3*3 matrix is "+tot);
     }
 }

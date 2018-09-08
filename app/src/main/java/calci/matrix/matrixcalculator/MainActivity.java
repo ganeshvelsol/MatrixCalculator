@@ -8,12 +8,13 @@ import android.widget.TextView;
 
 import calci.matrix.matrixcalculator.addition.AdditionExample;
 import calci.matrix.matrixcalculator.determenent.DeterminentMatrix;
+import calci.matrix.matrixcalculator.inverse.InverseMatrix;
 import calci.matrix.matrixcalculator.subtraction.SubtractionExample;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView Addition_matrix_txt,subtraction_matrix_txt,multipication_matrix_txt,
-            transepose_matrix_txt,determinent_matrix_txt,diagonal_matrix_txt,
+            inverseMatrix,determinent_matrix_txt,diagonal_matrix_txt,
             upper_triangular_matrix_txt,lower_triangular_matrix_txt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Addition_matrix_txt=(TextView)findViewById(R.id.Addition_matrix_txt);
         subtraction_matrix_txt=(TextView)findViewById(R.id.subtraction_matrix_txt);
         multipication_matrix_txt=(TextView)findViewById(R.id.multipication_matrix_txt);
-        transepose_matrix_txt=(TextView)findViewById(R.id.transepose_matrix_txt);
+        inverseMatrix=(TextView)findViewById(R.id.transepose_matrix_txt);
         determinent_matrix_txt=(TextView)findViewById(R.id.determinent_matrix_txt);
         diagonal_matrix_txt=(TextView)findViewById(R.id.diagonal_matrix_txt);
         upper_triangular_matrix_txt=(TextView)findViewById(R.id.upper_triangular_matrix_txt);
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(MainActivity.this,DeterminentMatrix.class));
+            }
+        });
+
+        inverseMatrix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //calling the inverse matrix activity
+                startActivity(new Intent(MainActivity.this,InverseMatrix.class));
             }
         });
     }
