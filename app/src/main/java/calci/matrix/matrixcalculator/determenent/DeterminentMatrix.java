@@ -178,15 +178,15 @@ public class DeterminentMatrix extends AppCompatActivity {
         int  ad=(Integer.parseInt(a2)*Integer.parseInt(a5));
         int bc= (Integer.parseInt(a3)*Integer.parseInt(a4));
         int s=ad-bc;
-        one.setText("det matrix of 2*2 is "+s);
+        two.setText("det matrix of 2*2 is "+s);
 
     }
     public void performThreethree()
     {
         int one1=Integer.parseInt(a11)*((Integer.parseInt(a22)*Integer.parseInt(a33))-(Integer.parseInt(a32)*Integer.parseInt(a23)));
-        int two=Integer.parseInt(a12)*((Integer.parseInt(a21)*Integer.parseInt(a33))-(Integer.parseInt(a23)*Integer.parseInt(a31)));
+        int twos=Integer.parseInt(a12)*((Integer.parseInt(a21)*Integer.parseInt(a33))-(Integer.parseInt(a23)*Integer.parseInt(a31)));
         int thre=Integer.parseInt(a13)*((Integer.parseInt(a21)*Integer.parseInt(a32))-(Integer.parseInt(a31)*Integer.parseInt(a22)));
-        int tot=one1-two+thre;
-        one.setText("det matrix of 3*3 matrix is "+tot);
+        int tot=one1-twos+thre;
+        two.setText("det matrix of 3*3 matrix is "+tot);
     }
 }
