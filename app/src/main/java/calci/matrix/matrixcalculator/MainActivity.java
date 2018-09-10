@@ -9,6 +9,7 @@ import android.widget.TextView;
 import calci.matrix.matrixcalculator.addition.AdditionExample;
 import calci.matrix.matrixcalculator.determenent.DeterminentMatrix;
 import calci.matrix.matrixcalculator.inverse.InverseMatrix;
+import calci.matrix.matrixcalculator.multipication.Multipication;
 import calci.matrix.matrixcalculator.subtraction.SubtractionExample;
 
 public class MainActivity extends AppCompatActivity {
@@ -73,6 +74,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //calling the inverse matrix activity
                 startActivity(new Intent(MainActivity.this,InverseMatrix.class));
+            }
+        });
+        multipication_matrix_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Multipication.class));
+            }
+        });
+
+        upper_triangular_matrix_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,UpperTrianguar.class));
             }
         });
     }
