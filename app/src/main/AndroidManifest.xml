@@ -33,7 +33,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".multipication.Multipication" />
+        <activity android:name=".multipication.Multipication"
+            android:label="Multiplexing"/>
         <activity android:name=".UpperTrianguar"
             android:label="Upper Triangular"/>
         <activity android:name=".lowertriangular.LowerTriangular"
