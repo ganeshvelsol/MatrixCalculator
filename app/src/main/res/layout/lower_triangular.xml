@@ -8,7 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_margin="5dp"/>
+        android:textSize="16sp"
+        android:textColor="#d2ff0000"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#d2ff0000"
             android:gravity="center"
             android:text="x"/>
         <TextView
@@ -51,6 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#d2ff0000"
             android:gravity="center"
             android:text="x"/>
         <TextView
@@ -58,6 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#d2ff0000"
             android:gravity="center"
             android:text="x"/>
         <TextView
@@ -80,6 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="#d2ff0000"
             android:text="x"/>
         <TextView
             android:id="@+id/eigt"
@@ -87,6 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="#d2ff0000"
             android:text="x"/>
         <TextView
             android:id="@+id/nine"
@@ -94,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="#d2ff0000"
             android:text="x"/>
     </LinearLayout>
     <TextView

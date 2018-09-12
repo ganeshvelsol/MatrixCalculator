@@ -1,6 +1,9 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#872828ef"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:text="Matrix Calculator"
@@ -9,12 +12,14 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="20sp"
-        android:textColor="#426"
+        android:textColor="#ffffff"
         android:fontFamily="serif"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:paddingLeft="7dp">
         <TextView
@@ -23,34 +28,34 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Addition Matrix"
-            android:textColor="#426"
+            android:textColor="#ffffff"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/subtraction_matrix_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Subtraction Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/multipication_matrix_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Multipication Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
         <TextView
             android:id="@+id/transepose_matrix_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Inverse Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
             android:layout_margin="5dp"/>
         <TextView
@@ -59,9 +64,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Determinent Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:id="@+id/diagonal_matrix_txt"
@@ -69,9 +74,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Diagonal Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:id="@+id/upper_triangular_matrix_txt"
@@ -79,9 +84,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Upper Triangular Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
 
         <TextView
             android:id="@+id/lower_triangular_matrix_txt"
@@ -89,9 +94,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:text="Lower Triangular Matrix"
-            android:textColor="#426"
+            android:textColor="#fff6f6"
             android:textSize="16sp"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
 </LinearLayout>

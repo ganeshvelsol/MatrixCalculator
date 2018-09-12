@@ -1,7 +1,7 @@
-<RelativeLayout android:layout_width="match_parent"
+<RelativeLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,7 +51,8 @@
                 android:text="colums"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left|center"/>
+                android:layout_gravity="left|center"
+                android:textColor="#ff0000"/>
 
         </LinearLayout>
 
@@ -87,6 +88,9 @@
             android:text="Enter values"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
+            android:textColor="#f8ffffff"
+            android:background="@drawable/btn_shpe"
+            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content" />
 
         <TextView
@@ -123,15 +127,9 @@
             android:text="Enter values"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
+            android:textColor="#f8ffffff"
+            android:background="@drawable/btn_shpe"
+            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
-    <Button
-        android:id="@+id/sub_proceed"
-        android:text="Proceed"
-        android:textAllCaps="false"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"/>
 </RelativeLayout>

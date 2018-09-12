@@ -3,6 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
+        android:text=" the resultant matrix  will be "
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,27 +21,39 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="200dp"
         android:layout_marginLeft="49dp"
+        android:gravity="center"
         android:layout_marginStart="49dp"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
          />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView13"
-        android:layout_centerHorizontal="true"
-         />
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView14"
-        android:layout_marginLeft="51dp"
-        android:layout_marginStart="51dp"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginLeft="89dp"
+        android:layout_marginStart="89dp"
         android:layout_toEndOf="@+id/textView14"
         android:layout_toRightOf="@+id/textView14"
-         />
+        android:background="#ffd700"
+        android:textColor="#ff4500"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textView16"
@@ -40,7 +62,10 @@
         android:layout_alignLeft="@+id/textView13"
         android:layout_alignStart="@+id/textView13"
         android:layout_below="@+id/textView14"
+        android:gravity="center"
         android:layout_marginTop="33dp"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
          />
 
     <TextView
@@ -50,6 +75,9 @@
         android:layout_alignBottom="@+id/textView16"
         android:layout_toLeftOf="@+id/textView15"
         android:layout_toStartOf="@+id/textView15"
+        android:gravity="center"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
          />
 
     <TextView
@@ -59,6 +87,9 @@
         android:layout_alignBottom="@+id/textView17"
         android:layout_alignEnd="@+id/textView15"
         android:layout_alignRight="@+id/textView15"
+        android:gravity="center"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
          />
 
     <TextView
@@ -69,15 +100,23 @@
         android:layout_alignRight="@+id/textView16"
         android:layout_below="@+id/textView16"
         android:layout_marginTop="26dp"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
+        android:gravity="center"
          />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
         android:layout_alignBottom="@+id/textView19"
         android:layout_alignLeft="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
+        android:gravity="center"
+        android:text="100"
          />
 
     <TextView
@@ -87,5 +126,9 @@
         android:layout_alignBottom="@+id/textView20"
         android:layout_alignEnd="@+id/textView18"
         android:layout_alignRight="@+id/textView18"
+        android:text="1010"
+        android:background="#ffd700"
+        android:textColor="#ff4500"
+        android:gravity="center"
          />
 </RelativeLayout>

@@ -5,11 +5,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="35dp"
         android:gravity="center"
         android:text="Determinenet Matrix Example"
         android:textSize="15sp"
-        android:textColor="#426"
+        android:layout_marginTop="5dp"
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"
         android:fontFamily="serif"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
             android:textColor="#426"
             android:textSize="15sp"
             android:fontFamily="serif"/>
@@ -48,7 +51,10 @@
             android:text="Enter values"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_shpe"
+            android:layout_marginLeft="7dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -61,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
             android:textColor="#426"
             android:textSize="15sp"
             android:fontFamily="serif"/>
@@ -88,15 +95,16 @@
             android:text="Enter values"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_shpe"
+            android:layout_marginLeft="7dp"/>
     </LinearLayout>
-
-
-
     <TextView
         android:text="the resultant matrix wll be"
         android:gravity="center"
         android:layout_marginTop="15sp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -110,16 +118,23 @@
             android:id="@+id/one"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/two"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/three"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"/>
     </LinearLayout>
 
@@ -133,16 +148,22 @@
             android:id="@+id/four"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/five"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/six"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
@@ -155,16 +176,22 @@
             android:id="@+id/seven"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/eigt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/nine"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
     </LinearLayout>
 

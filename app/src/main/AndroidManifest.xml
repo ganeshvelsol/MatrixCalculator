@@ -17,11 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".addition.AdditionExample" />
-        <activity android:name=".addition.Addition" />
+        <activity android:name=".addition.Addition"
+            android:label="Addition"/>
         <activity android:name=".subtraction.SubtractionExample" />
-        <activity android:name=".subtraction.Subtraction" />
-        <activity android:name=".DiagonalMatrix" />
-        <activity android:name=".determenent.DeterminentMatrix" />
+        <activity android:name=".subtraction.Subtraction"
+            android:label="Subtraction"/>
+        <activity android:name=".DiagonalMatrix"
+            android:label="Diagonal Matrix"/>
+        <activity android:name=".determenent.DeterminentMatrix"
+            android:label="Determinent"/>
         <activity android:name=".inverse.InverseMatrix">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,8 +34,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".multipication.Multipication" />
-        <activity android:name=".UpperTrianguar" />
-        <activity android:name=".lowertriangular.LowerTriangular"></activity>
+        <activity android:name=".UpperTrianguar"
+            android:label="Upper Triangular"/>
+        <activity android:name=".lowertriangular.LowerTriangular"
+            android:label="Lower Tringular">
+        </activity>
     </application>
 
 </manifest>

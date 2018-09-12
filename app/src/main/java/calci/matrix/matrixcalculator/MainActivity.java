@@ -9,6 +9,7 @@ import android.widget.TextView;
 import calci.matrix.matrixcalculator.addition.AdditionExample;
 import calci.matrix.matrixcalculator.determenent.DeterminentMatrix;
 import calci.matrix.matrixcalculator.inverse.InverseMatrix;
+import calci.matrix.matrixcalculator.lowertriangular.LowerTriangular;
 import calci.matrix.matrixcalculator.multipication.Multipication;
 import calci.matrix.matrixcalculator.subtraction.SubtractionExample;
 
@@ -18,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
             inverseMatrix,determinent_matrix_txt,diagonal_matrix_txt,
             upper_triangular_matrix_txt,lower_triangular_matrix_txt;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -87,6 +90,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,UpperTrianguar.class));
+            }
+        });
+        lower_triangular_matrix_txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, LowerTriangular.class));
             }
         });
     }

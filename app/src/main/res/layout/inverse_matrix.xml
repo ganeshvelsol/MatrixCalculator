@@ -8,7 +8,9 @@
         android:gravity="center"
         android:text="Inverse Matrix Example"
         android:textSize="15sp"
-        android:textColor="#426"
+        android:layout_marginTop="7dp"
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"
         android:fontFamily="serif"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,6 +48,9 @@
             android:id="@+id/first_buttons"
             android:text="Enter values"
             android:textAllCaps="false"
+            android:background="@drawable/btn_shpe"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -67,16 +72,23 @@
             android:id="@+id/ones"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/twos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/threes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"/>
     </LinearLayout>
 
@@ -90,16 +102,23 @@
             android:id="@+id/fours"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/fives"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/sixs"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
@@ -112,16 +131,23 @@
             android:id="@+id/sevens"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/eigts"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/nines"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#ff4500"
+            android:layout_marginRight="7dp"
             android:layout_weight="1"/>
     </LinearLayout>
 

@@ -1,6 +1,14 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
@@ -13,6 +21,8 @@
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="74dp"
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"
         android:text="1" />
 
     <TextView
@@ -24,6 +34,7 @@
         android:layout_marginStart="59dp"
         android:layout_toEndOf="@+id/textView10"
         android:layout_toRightOf="@+id/textView10"
+
         android:text="0" />
 
     <TextView
@@ -54,6 +65,8 @@
         android:layout_alignBottom="@+id/textView22"
         android:layout_toLeftOf="@+id/textView12"
         android:layout_toStartOf="@+id/textView12"
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"
         android:text="1" />
 
     <TextView
@@ -91,6 +104,8 @@
         android:layout_alignBottom="@+id/textView26"
         android:layout_alignLeft="@+id/textView24"
         android:layout_alignStart="@+id/textView24"
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"
         android:layout_marginLeft="13dp"
         android:layout_marginStart="13dp"
         android:text="1" />
@@ -106,4 +121,18 @@
         android:text="The diagonal elemmts should have a value  either
  1 or other than 1, itmay be positive integers or negative integers that matrix we
  call as diagonal matrix" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_marginTop="14dp"
+        android:text="Diagonal Matrix"
+        android:background="#ffc0cb"
+        android:textColor="#ff4500"/>
 </RelativeLayout>
+</LinearLayout>
+

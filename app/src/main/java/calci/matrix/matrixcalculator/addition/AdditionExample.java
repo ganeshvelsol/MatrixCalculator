@@ -31,6 +31,7 @@ public class AdditionExample extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.addition_example);
         initParameterss();
@@ -51,7 +52,6 @@ public class AdditionExample extends AppCompatActivity
         dd=new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,col2);
         spinner_columns2.setAdapter(dd);
 
-        proceed=(Button)findViewById(R.id.proceed);
         first_button=(Button)findViewById(R.id.first_button);
         second_button=(Button)findViewById(R.id.second_button);
         first_button.setOnClickListener(new View.OnClickListener() {
@@ -69,23 +69,7 @@ public class AdditionExample extends AppCompatActivity
                 secondMatrices();
             }
         });
-        proceed.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
 
-
-                if (c1==r2)
-                {
-                    performActions();
-                }
-                else
-                {
-
-                }
-            }
-        });
     }
     public void performActions()
     {
