@@ -27,9 +27,11 @@ public class Multipication extends AppCompatActivity
     String crr[]={"--select column--","2","3"};
     String r1,c1,r2,c2;
     EditText et_1,et_2,et_3,et_4,et_5,et_6,et_7,et_8,et_9,et_10,et_11,et_12,et_13,et_14,et_15,et_16,et_17,
-            et_18,et_19,et_20,et_21,et_22,et_23,et_24,et_25,et_26;
+            et_18,et_19,et_20,et_21,et_22,et_23,et_24,et_25,et_26,two_one,two_two,two_three,two_four,two_five,two_six,
+            three_one,three_two,three_three,three_four,three_five,three_six;
     TextView one,two,three,four,five,six,seven,eigt,nine;
-    String a1,a2,a3,a4,a5,a6,a7,a8,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18;
+    String a1,a2,a3,a4,a5,a6,a7,a8,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,
+    tone,ttwo,tthree,tfour,tfive,tsix,thone,thtwo,ththree,thfour,thfive,thsix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -132,6 +134,40 @@ public class Multipication extends AppCompatActivity
                     }
                 });
                 al.show();
+
+            }
+        }
+        else if (r1=="2")
+        {
+            if (c1=="3")
+            {
+                //inflate 2*3 layouts
+                final View v6=((Activity)this).getLayoutInflater().inflate(R.layout.two_to_three,null);
+                AlertDialog.Builder al=new AlertDialog.Builder(this);
+                al.setCancelable(false);
+                al.setView(v6);
+                al.setTitle("enter values");
+                al.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
+                        two_one=(EditText)v6.findViewById(R.id.two_one);
+                        tone=two_one.getText().toString().trim();
+                        two_two=(EditText)v6.findViewById(R.id.two_two);
+                        ttwo=two_two.getText().toString().trim();
+                        two_three=(EditText)v6.findViewById(R.id.two_three);
+                        tthree=two_three.getText().toString().trim();
+                        two_four=(EditText)v6.findViewById(R.id.two_four);
+                        tfour=two_four.getText().toString().trim();
+                        two_five=(EditText)v6.findViewById(R.id.two_five);
+                        tfive=two_five.getText().toString().trim();
+                        two_six=(EditText)v6.findViewById(R.id.two_six);
+                        tsix=two_six.getText().toString().trim();
+
+                    }
+                });
+                al.show();
+
 
             }
         }
@@ -320,6 +356,50 @@ public class Multipication extends AppCompatActivity
                         seven.setText(""+ei);
                         eigt.setText(""+ni);
                         nine.setText(""+te);
+                    }
+                });
+                al.show();
+            }
+        }
+        else if (r2=="3")
+        {
+            if (c2=="2")
+            {
+                //displaying the 3*2 layouts
+                final View v6=((Activity)this).getLayoutInflater().inflate(R.layout.three_to_two,null);
+                AlertDialog.Builder al=new AlertDialog.Builder(this);
+                al.setCancelable(false);
+                al.setView(v6);
+                al.setTitle("enter values");
+                al.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
+                        three_one=(EditText)v6.findViewById(R.id.three_one);
+                        thone=three_one.getText().toString().trim();
+                        three_two=(EditText)v6.findViewById(R.id.three_two);
+                        thtwo=three_two.getText().toString().trim();
+                        three_three=(EditText)v6.findViewById(R.id.three_three);
+                        ththree=three_three.getText().toString().trim();
+                        three_four=(EditText)v6.findViewById(R.id.three_four);
+                        thfour=three_four.getText().toString().trim();
+                        three_five=(EditText)v6.findViewById(R.id.three_five);
+                        thfive=three_five.getText().toString().trim();
+                        three_six=(EditText)v6.findViewById(R.id.three_six);
+                        thsix=three_six.getText().toString().trim();
+
+                        int on=(Integer.parseInt(tone)*Integer.parseInt(thone))+(Integer.parseInt(ttwo)*Integer.parseInt(ththree))+(Integer.parseInt(tthree)*Integer.parseInt(thfive));
+                        int twosss=(Integer.parseInt(tone)*Integer.parseInt(thtwo))+(Integer.parseInt(ttwo)*Integer.parseInt(thfour))+(Integer.parseInt(tthree)*Integer.parseInt(thsix));
+
+                        int threes=(Integer.parseInt(tfour)*Integer.parseInt(thone))+(Integer.parseInt(tfive)*Integer.parseInt(ththree))+(Integer.parseInt(tsix)*Integer.parseInt(thfive));
+                        int foursss=(Integer.parseInt(tfour)*Integer.parseInt(thtwo))+(Integer.parseInt(tfive)*Integer.parseInt(thfour))+(Integer.parseInt(tsix)*Integer.parseInt(thsix));
+
+
+                        two.setText(""+on);
+                        three.setText(""+twosss);
+                        five.setText(""+threes);
+                        six.setText(""+foursss);
+
                     }
                 });
                 al.show();
