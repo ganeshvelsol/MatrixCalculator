@@ -167,8 +167,6 @@ public class Multipication extends AppCompatActivity
                     }
                 });
                 al.show();
-
-
             }
         }
         else if (r1=="3")
@@ -221,7 +219,17 @@ public class Multipication extends AppCompatActivity
                 });
                 al.show();
             }
+        }else if (r1=="3")
+        {
+            if (c1=="2")
+            {
+                //inflate 3*2 matrix latut
+
+            }
         }
+
+
+
     }
 
     public void performSecondButtons()
@@ -399,10 +407,17 @@ public class Multipication extends AppCompatActivity
                         three.setText(""+twosss);
                         five.setText(""+threes);
                         six.setText(""+foursss);
-
                     }
                 });
                 al.show();
+            }
+        }
+        else if (r2=="3")
+        {
+            if (c2=="2")
+            {
+                //inflate 3*2 matrix displaying layout
+
             }
         }
     }
