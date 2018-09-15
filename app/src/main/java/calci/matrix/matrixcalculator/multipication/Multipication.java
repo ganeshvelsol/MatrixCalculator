@@ -3,6 +3,7 @@ package calci.matrix.matrixcalculator.multipication;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -486,6 +487,14 @@ public class Multipication extends AppCompatActivity
                 });
                 al.show();
             }
+        }
+        else if (r1=="2" && c1=="3")
+        {
+             if (r2=="2"&& c2=="3")
+             {
+                 Snackbar ss=Snackbar.make(Multipication.this.findViewById(android.R.id.content),"selected matrix is not possible",Snackbar.LENGTH_LONG);
+                 ss.show();
+             }
         }
     }
  }
