@@ -35,7 +35,6 @@ public class SubtractionExample extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.subtraction_example);
 

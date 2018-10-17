@@ -68,19 +68,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:weightSum="2">
             <Spinner
                 android:id="@+id/sub_spinner_rows1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="3dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
             <Spinner
                 android:id="@+id/sub_spinner_columns1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="8dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
         </LinearLayout>
         <Button
@@ -105,7 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:weightSum="2">
             <Spinner
                 android:id="@+id/sub_spinner_rows2"
@@ -113,13 +119,19 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="3dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
             <Spinner
                 android:id="@+id/sub_spinner_columns2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="8dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
         </LinearLayout>
         <Button

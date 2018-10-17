@@ -13,7 +13,8 @@ import calci.matrix.matrixcalculator.lowertriangular.LowerTriangular;
 import calci.matrix.matrixcalculator.multipication.Multipication;
 import calci.matrix.matrixcalculator.subtraction.SubtractionExample;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     TextView Addition_matrix_txt,subtraction_matrix_txt,multipication_matrix_txt,
             inverseMatrix,determinent_matrix_txt,diagonal_matrix_txt,
@@ -48,7 +49,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        subtraction_matrix_txt.setOnClickListener(new View.OnClickListener() {
+        subtraction_matrix_txt.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view)
             {

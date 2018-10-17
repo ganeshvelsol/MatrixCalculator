@@ -30,7 +30,7 @@ public class Multipication extends AppCompatActivity
     EditText et_1,et_2,et_3,et_4,et_5,et_6,et_7,et_8,et_9,et_10,et_11,et_12,et_13,et_14,et_15,et_16,et_17,
             et_18,et_19,et_20,et_21,et_22,et_23,et_24,et_25,et_26,two_one,two_two,two_three,two_four,two_five,two_six,
             three_one,three_two,three_three,three_four,three_five,three_six;
-    TextView one,two,three,four,five,six,seven,eigt,nine;
+    TextView one,two,three,four,five,six,seven,eigt,nine,result_text_label;
     String a1,a2,a3,a4,a5,a6,a7,a8,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,
     tone,ttwo,tthree,tfour,tfive,tsix,thone,thtwo,ththree,thfour,thfive,thsix,A321,A322,A323,A324,A325,A326,A231,A232,A233,A234,A235,A236;
 
@@ -52,6 +52,7 @@ public class Multipication extends AppCompatActivity
         seven=(TextView)findViewById(R.id.seven);
         eigt=(TextView)findViewById(R.id.eigt);
         nine=(TextView)findViewById(R.id.nine);
+        result_text_label=(TextView)findViewById(R.id.result_text_label);
 
         spiner_rows1=(Spinner)findViewById(R.id.spiner_rows1);
         spiner_columns1=(Spinner)findViewById(R.id.spiner_columns1);
@@ -271,6 +272,7 @@ public class Multipication extends AppCompatActivity
     }
     public void displayLayouts()
     {
+        result_text_label.setVisibility(View.VISIBLE);
         if (r2=="2")
         {
             if(c2=="2")

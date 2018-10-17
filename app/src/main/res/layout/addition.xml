@@ -116,7 +116,6 @@
         android:background="#ffd700"
         android:textColor="#ff4500"
         android:gravity="center"
-        android:text="100"
          />
 
     <TextView
@@ -126,7 +125,6 @@
         android:layout_alignBottom="@+id/textView20"
         android:layout_alignEnd="@+id/textView18"
         android:layout_alignRight="@+id/textView18"
-        android:text="1010"
         android:background="#ffd700"
         android:textColor="#ff4500"
         android:gravity="center"

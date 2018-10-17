@@ -31,19 +31,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:weightSum="2">
             <Spinner
                 android:id="@+id/spiner_rows1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="3dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
             <Spinner
                 android:id="@+id/spiner_columns1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="8dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
         </LinearLayout>
         <Button
@@ -52,6 +58,7 @@
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_shpe"
             android:layout_marginLeft="7dp"/>
@@ -75,19 +82,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:weightSum="2">
             <Spinner
                 android:id="@+id/spiner_rows2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="3dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
             <Spinner
                 android:id="@+id/spiner_columns2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@drawable/spinner_shape"
+                android:layout_marginLeft="8dp"
+                android:popupBackground="#dfffffff"
+                android:layout_weight="0.8">
             </Spinner>
         </LinearLayout>
         <Button
@@ -96,15 +109,21 @@
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_shpe"
             android:layout_marginLeft="7dp"/>
     </LinearLayout>
     <TextView
+        android:id="@+id/result_text_label"
+        android:visibility="gone"
         android:text="the resultant matrix wll be"
         android:gravity="center"
         android:layout_marginTop="15sp"
         android:layout_marginLeft="10dp"
+        android:textColor="#426"
+        android:textSize="15sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -118,21 +137,21 @@
             android:id="@+id/one"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/two"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/three"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_marginRight="7dp"
             android:layout_weight="1"/>
@@ -148,21 +167,21 @@
             android:id="@+id/four"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/five"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/six"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
     </LinearLayout>
@@ -176,21 +195,21 @@
             android:id="@+id/seven"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/eigt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/nine"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="left"
             android:textColor="#ff4500"
             android:layout_weight="1"/>
     </LinearLayout>
